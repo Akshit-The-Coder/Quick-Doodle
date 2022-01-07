@@ -1,0 +1,81 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sketch Identification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+  
+  
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-color: #fbd139;">
+  <center>
+  <!-- Modal -->
+<div id="myModal" class="modal fade">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title">Sketches</h4>
+    </div>
+
+    <div class="modal-body">
+      <img src="sketch1.png">
+      <img src="sketch2.png">
+    </div>
+
+  </div>
+</div>
+
+<h1 id="header">
+  Sketch Identification
+  <button id="show_sketch" class="btn btn-info" data-toggle="modal" data-target="#myModal">Show Sketch</button>
+</h1>
+<p id="label">Label : </p>
+<p id="confidence">Confidence : </p>
+<button class="btn btn-danger btn-lg" onclick="clearCanvas();">Clear Canvas</button>
+<h4>
+<span class="footer">
+<span id="ftr_1" class="footer">D</span>
+<span id="ftr_2" class="footer">e</span>
+<span id="ftr_3" class="footer">v</span>
+<span id="ftr_4" class="footer">e</span>
+<span id="ftr_5" class="footer">l</span>
+<span id="ftr_6" class="footer">o</span>
+<span id="ftr_7" class="footer">p</span>
+<span id="ftr_8" class="footer">e</span>
+<span id="ftr_9" class="footer">d</span>
+<span id="ftr_10" class="footer">&nbsp;</span>
+<span id="ftr_11" class="footer">B</span>
+<span id="ftr_12" class="footer">y</span>
+<span id="ftr_13" class="footer">:</span>
+<span id="ftr_14" class="footer">&nbsp;</span>
+<span id="ftr_15" class="footer">A</span>
+<span id="ftr_16" class="footer">k</span>
+<span id="ftr_17" class="footer">s</span>
+<span id="ftr_18" class="footer">h</span>
+<span id="ftr_19" class="footer">i</span>
+<span id="ftr_20" class="footer">t</span>
+<span id="ftr_21" class="footer">&nbsp;</span>
+<span id="ftr_22" class="footer">H</span>
+<span id="ftr_23" class="footer">e</span>
+<span id="ftr_24" class="footer">l</span>
+<span id="ftr_25" class="footer">i</span>
+<span id="ftr_26" class="footer">w</span>
+<span id="ftr_27" class="footer">a</span>
+<span id="ftr_28" class="footer">l</span>
+</span>
+</h4>
+</center>
+
+<script src="main.js"></script>
+</body>

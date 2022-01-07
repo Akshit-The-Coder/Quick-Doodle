@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@600&display=swap');
+h1{
+    color: red;
+    background-color: cyan;
+    padding-left: 120px;
+}
+#header:hover
+{
+    color: white;
+    background-color: black;  
+}
+.btn-danger:hover{
+    background-color: white;
+    color: red;
+    transform: scale(1.1);
+}
+.btn-info:hover{
+    background-color: white;
+    color: cyan;
+    transform: scale(1.1);
+    text-align: left;
+}
+#label:hover{
+color: red;
+}
+#confidence:hover{
+color: red;
+}
+#label
+{
+    width: 80px;
+}
+#confidence
+{
+    width: 151px;
+}
+#show_sketch
+{
+    float: right;
+    margin-top: 3px;
+}
+#footer{
+    bottom: 0;
+    font-size: 25px;
+    position: fixed;
+    width: 100%;
+    background-color:purple;
+    color: white;
+    font-family: 'Itim', cursive;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+}
+h4{
+    letter-spacing: -2px;
+}
+p{
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+}
+canvas
+{
+    animation-name: canvas_bg;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border:5px solid cornsilk ;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+@keyframes canvas_bg
+{
+0%{box-shadow: 10px 10px 36px red;}
+25%{box-shadow: 10px 10px 36px pink;}
+50%{box-shadow: 10px 10px 36px green;}
+75%{box-shadow: 10px 10px 36px blue;}
+100%{box-shadow: 10px 10px 36px yellow;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ftr_1:hover
+{
+font-size: 20px;    
+}
