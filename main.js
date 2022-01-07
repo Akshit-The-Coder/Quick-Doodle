@@ -1,6 +1,6 @@
 function preload()
 {
-    classifier = ml5.imageclassifier('DoodleNet');
+    classifier = ml5.imageClassifier('DoodleNet');
 }
 function setup()
 {
@@ -26,19 +26,12 @@ function classifyCanvas()
 {
     classifier.classify(canvas , gotResult);
 }
-function gotResult(error,results)
+function gotResult(results)
 {
-    if (error)
-    {
-        console.error("error");
-    }
-    else
-    {
         console.log(results);
-        document.getElementsById("label").innerHTML = 'Label: ' + results[0].label;
-        document.getElementsById("confidence").innerHTML = 'Confidence: ' + Math.round(results[0].confidence * 100) + "%";
+        document.getElementById("label").innerHTML = 'Label: ' + results[0].label;
+        document.getElementById("confidence").innerHTML = 'Confidence: ' + Math.round(results[0].confidence * 100) + "%";
 
         utterThis = new SpeechSynthesisUtterance(results[0].label);
         synth.speak(utterThis);
-    }
 }
